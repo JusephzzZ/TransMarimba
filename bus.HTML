@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TransMarimba - Transporte Intermunicipal en Antioquia</title>
+    <link rel="stylesheet" href="bus.css">
+</head>
+<body>
+
+    <header>
+    <div class="container">
+    <h1>TransMarimba</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#mapa">Mapa</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <section id="inicio">
+        <div class="container">
+            <h2>Bienvenidos a TransMarimba</h2>
+            <p>Ofrecemos el mejor servicio de transporte intermunicipal en el departamento de Antioquia. Conoce nuestros servicios, destinos, y mucho más.</p>
+            <img src="bus.png" alt="TransMarimba" width="150">
+        </div>
+    </section>
+
+    <section id="servicios">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <div class="servicios">
+                <div class="servicio">
+                    <h3>Transporte de Pasajeros</h3>
+                    <p>Ofrecemos transporte cómodo y seguro para tus viajes intermunicipales dentro del departamento de Antioquia.</p>
+                </div>
+                <div class="servicio">
+                    <h3>Envío de Encomiendas</h3>
+                    <p>Tu encomienda llegará a su destino de manera segura y puntual con nuestro servicio de envío.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="destinos">
+        <div class="container">
+            <h2>Destinos</h2>
+            <p>Nos dirigimos a las principales ciudades y municipios del departamento de Antioquia. A continuación, algunos de nuestros destinos:</p>
+            <ul>
+                <li>Medellín</li>
+                <li>Envigado</li>
+                <li>Rionegro</li>
+                <li>La Ceja</li>
+                <li>Marinilla</li>
+                <li>Yarumal</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="video">
+        <div class="container">
+            <h2>Conoce Más Sobre Nosotros</h2>
+            <div class="video-container">
+                <iframe src="https://youtu.be/pAVG1K3Vo9M?si=ck3u8_15Aoq9hf0_" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="mapa">
+        <div class="container">
+            <h2>Encuéntranos en el Mapa</h2>
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.8668267088564!2d-75.580684685541!3d6.2443384308231675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e7e5d4c1a8c9e1f%3A0xf1c2f9fa94bfe440!2sMedell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1610446912971!5m2!1ses!2sco" 
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <div class="info-contacto">
+                <p><strong>Teléfono:</strong> 3146241355</p>
+                <p><strong>Email:</strong> transmarimba@gmail.com</p>
+                <p><strong>Dirección:</strong> Calle 12 #25-45, Medellín, Antioquia</p>
+            </div>
+            <div class="formulario-contacto">
+                <h3>Envíanos tus Peticiones, Quejas, Reclamos, Sugerencias y Felicitaciones</h3>
+                <form action="enviar_pqrsf.php" method="POST">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 TransMarimba. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
